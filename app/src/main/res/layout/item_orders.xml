@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.text.TextUtils"/>
+        <import type="android.view.View"/>
+        <variable name="model" type="com.mm.entedeal.module.ordermodule.model.OrderItemViewModel"/>
+
+    </data>
+
+
+<LinearLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_item"
+        android:padding="10dp"
+        android:text="@{model.itemId}"
+        />
+
+
+
+</LinearLayout>
+</layout>

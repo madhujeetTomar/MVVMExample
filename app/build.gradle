@@ -1,0 +1,102 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+    defaultConfig {
+        applicationId "com.mm.entedeal"
+        minSdkVersion 15
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            debuggable false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            // buildConfigField "String", "BASE_URL", "\"https://stag.entedeal.com/\""
+            //   buildConfigField "String", "BASE_URL", "\"http://entedeal.embdev.in/\""
+            // buildConfigField "String", "BASE_URL", "\"https://mcprod.entedeal.com/\""
+            // buildConfigField "String", "BASE_URL", "\"https://www.entedeal.com/\""
+            buildConfigField "String", "BASE_URL", "\"https://integration-5ojmyuq-eidwu2rmzhp62.ap-3.magentosite.cloud/\""
+
+
+        }
+        debug {
+            debuggable true
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            //   buildConfigField "String", "BASE_URL", "\"https://apps.entedeal.com/\""
+            buildConfigField "String", "BASE_URL", "\"https://stag.entedeal.com/\""
+
+
+
+            //  buildConfigField "String", "BASE_URL", "\"http://entedeal.dev.emb/\""
+            //   buildConfigField "String", "BASE_URL", "\"https://apps.entedeal.com/\""
+
+            //  buildConfigField "String", "BASE_URL", "\"https://integration-5ojmyuq-eidwu2rmzhp62.ap-3.magentosite.cloud/\""
+            // buildConfigField "String", "BASE_URL", "\"https://mcprod.entedeal.com/\""
+
+        }
+    }
+    dataBinding
+            {
+                enabled = true
+            }
+}
+
+
+def retrofitVersion = '2.3.0'
+def rxJavaVersion = '2.0.1'
+ext.dagger2_version = '2.15'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.core:core-ktx:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation "com.google.dagger:dagger:$dagger2_version"
+    kapt "com.google.dagger:dagger-compiler:$dagger2_version"
+// dagger.android package (optional)
+    implementation "com.google.dagger:dagger-android:$dagger2_version"
+    kapt "com.google.dagger:dagger-android-processor:$dagger2_version"
+// Support library support (optional)
+    kapt "com.google.dagger:dagger-android-support:$dagger2_version"
+
+
+    // Android Lifecycle
+    implementation "androidx.lifecycle:lifecycle-runtime:2.1.0"
+    implementation "androidx.lifecycle:lifecycle-extensions:2.1.0"
+    implementation "androidx.lifecycle:lifecycle-reactivestreams:2.1.0"
+    kapt "androidx.lifecycle:lifecycle-compiler:2.1.0"
+
+    implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofitVersion"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-moshi:$retrofitVersion"
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.10.0'
+
+
+
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+// Because RxAndroid releases are few and far between, it is recommended you also
+// explicitly depend on RxJava's latest version for bug fixes and new features.
+// (see https://github.com/ReactiveX/RxJava/releases for latest 2.x.x version)
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.9'
+    implementation "io.reactivex.rxjava2:rxkotlin:2.3.0"
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+
+}
