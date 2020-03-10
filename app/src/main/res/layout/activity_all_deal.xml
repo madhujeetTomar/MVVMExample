@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="orderViewModel"
+            type="com.mj.demo.module.deallistmodule.DealListViewModel"/>
+    </data>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".module.deallistmodule.AllDealActivity">
+
+    <com.mj.demo.core.base.HorizontalCarouselRecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:clipToPadding="false"
+        android:overScrollMode="never"
+        android:id="@+id/recy_deal_list"
+        />
+</RelativeLayout>
+</layout>

@@ -1,3 +1,167 @@
 <resources>
-    <string name="app_name">MVVMExample</string>
+
+    <string name="title_activity_deal_list_screen">DealListScreen</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="title_activity_deal_list">DealListActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="app_name">Entedeal</string>
+    <string name="action_settings">action_settings</string>
+    <string name="deal_all">All deals</string>
+    <string name="deal_day">Deal of the day</string>
+    <string name="deal_deleted">Deal deleted successfully from cart.</string>
+    <string name="deal_desc">Deal Description</string>
+    <string name="deal_month">Deal of the month</string>
+    <string name="deal_on">Deal is on </string>
+    <string name="deal_title">Deal Title</string>
+    <string name="deal_week">Deal of the week</string>
+    <string name="debitcard">Debit card</string>
+    <string name="decline">Decline</string>
+    <string name="subscribenow">Subscribe Now !</string>
+    <string name="find_deal">Find incredible deals on your city.</string>
+    <string name="txt_save">"Save Up to 90% on food, health, entertainment and more."</string>
+    <string name="Continue">Continue</string>
+    <string name="description">Lorem Ipsum is simply dummy text of the printing and typesetting.</string>
+    <string name="edit_gift">Edit Gift</string>
+    <string name="submit">Submit</string>
+    <string name="oriznal_price">Oriznal Price : $ 500</string>
+    <string name="view_deal">View Deal</string>
+    <string name="buy_now">BUY NOW</string>
+    <string name="offer_price">Offer Price : $ 150</string>
+    <string name="time">12 Days, 10:38:12 Hours left</string>
+    <string name="sold_out">Sold Out</string>
+    <string name="off">80 % OFF</string>
+    <string name="off_price">Offer Price</string>
+    <string name="org_price">Orginal Price</string>
+    <string name="save_price">You Save</string>
+    <string name="bought">Bought</string>
+    <string name="review">Review</string>
+    <string name="reviews">Reviews</string>
+    <string name="no_data">No data available.</string>
+    <string name="HighLights_hed">Highlights</string>
+    <string name="highlights_hed">Highlights</string>
+    <string name="location_address">Location and Address</string>
+    <string name="know_more">Know Before You Buy</string>
+    <string name="detail">Deal Details</string>
+    <string name="home_offer">Offer Price:</string>
+    <string name="gift_a_firend">Gift A Friend</string>
+    <string name="name">Name</string>
+    <string name="discount_code">Enter discount code</string>
+    <string name="email">Email</string>
+    <string name="mob">Mobile</string>
+    <string name="addr1">Addresh 1</string>
+    <string name="addr2">Addresh 2</string>
+    <string name="zipcode">Zipcode</string>
+    <string name="msg">Message</string>
+    <string name="wishlist_head">Wishlist</string>
+    <string name="search_wish">Search or Create Wishlist</string>
+    <string name="search_wishlist">Search here</string>
+    <string name="no_tems_found">Exciting Deals Coming Soon</string>
+    <string name="emty">Empty </string>
+    <string name="write_create">SUBMIT</string>
+    <string name="share_intent_title"></string>
+    <string name="share_whatsapp_not_instaled">WhatsApp not Installed</string>
+    <string name="entedeal_app">Ente Deal App</string>
+    <string name="text_description">Do you want to create a new wishlist and add this deal to it?</string>
+    <string name="text_delete">Do you want to delete this item from cart</string>
+    <string name="order_confirm_hed">Order Confirmation!</string>
+    <string name="order_confirm_shiping_hed">Address</string>
+    <string name="order_confirm_amount_hed">Amount Details</string>
+    <string name="order_confirm_amount_item">Item Name</string>
+    <string name="order_confirm_amount_quantity">Quantity</string>
+    <string name="order_confirm_amount_price">Price</string>
+    <string name="check_out">I agree to the </string>
+    <string name="term_of_use">Terms Of Use </string>
+    <string name="privacy">Privacy Statement</string>
+    <string name="and">and </string>
+    <string name="terms_titel">Terms And Conditions </string>
+    <string name="about_us">AboutUs</string>
+    <string name="privacy_titel">Privacy Policy</string>
+    <string name="item_name">Get Aroma Therapy Body Scrub and Steam for Ladies and Gents at </string>
+    <string name="quntity">1</string>
+    <string name="price_detail">100</string>
+    <string name="price_low_to_high">Price : Low to High</string>
+    <string name="price_high_to_low">Price : High to Low</string>
+    <string name="search_deal">Search a deal</string>
+    <string name="razorpaytext">RAZORPAY</string>
+    <string name="teachprocesstext">TECHPROCESS</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="mob_number_verifi">Mobile Number Verification</string>
+    <string name="billing_address">Billing Address</string>
+    <string name="personal_detail">Personal Details</string>
+    <string name="verify_number">Verify Number</string>
+    <string name="save">Save</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+    <string name="notverfied">Not Verified</string>
+    <string name="mob_no">Mobile Number</string>
+    <string name="lname">Last Name</string>
+    <string name="fname">First Name</string>
+    <string name="persoanlbillingInfo">Personal / Billing Information</string>
+    <string name="billingAddr">Billing Address</string>
+    <string name="houseNameNo">House Name / No</string>
+    <string name="streetAdd">Street Address</string>
+    <string name="city">Alappuzha</string>
+    <string name="use_same_add_for_bill">Use same for Contact Address</string>
+    <string name="shippingAddr">Contact Address</string>
+    <string name="mobileverify_header">"To verify that this is your phone number, click 'Send code'
+ to receive your code. Once you received the code, please
+ enter it in the box below and submit."</string>
+    <string name="sendcode">SEND CODE</string>
+    <string name="entercode">Enter Code</string>
+    <string name="write_reset">RESET</string>
+    <string name="write_submit">SUBMIT</string>
+    <string name="sharewishlistmsg">SHARE WISHLIST</string>
+    <string name="SHARE_BTN">SHARE</string>
+    <string name="no_itemswishlist">NUMBER OF DEALS: 0</string>
+    <string name="no_more_wishlit">No more Wishlist is available to move</string>
+    <string name="write_confirm">CONFIRM</string>
+
+    <style name="share_nave">Share Rate</style>
+
+    <string name="order">Order</string>
+    <string name="total">Total</string>
+    <string name="paymentmethod">Payment :</string>
+    <string name="soldby">Sold By :</string>
+    <string name="myOrder">My Orders</string>
+    <string name="detailsOrder">You shall be sent your voucher as an SMS and an email. You can present this voucher to claim your deal.</string>
+    <string name="travel_and_tours_deals">Travel and Tours Deals</string>
+    <string name="are_you_sure_you_want_to_verify_your_number">Are you sure you want to verify your number</string>
+    <string name="future_deals">Future Deals</string>
+    <string name="offer_details">About Merchant</string>
+    <string name="return_status">Return status</string>
+    <string name="you_need_to_pay">You need to pay</string>
+    <string name="date">Date</string>
+    <string name="order_number">Order#</string>
+    <string name="status">Status</string>
+    <string name="action">Action</string>
+    <string name="my_returns">My Returns</string>
+    <string name="ship_from">Return From</string>
+    <string name="return_label">Return #</string>
+    <string name="request_information">Request Infor
+        mation</string>
+    <string name="shipping_address">OrderAddress</string>
+    <string name="date_requested">Date requested:</string>
+    <string name="create_new_return">Create New Return</string>
+    <string name="deal_list">Deal List</string>
+    <string name="network_message">Network not available. Please try after some time</string>
+    <string name="rs">\u20A8</string>
+    <string name="purchased_by">Purchased by</string>
+    <string name="my_product_reviews">My Product Reviews</string>
+    <string name="push_notification_title">Do you want to enable</string>
+    <string name="push_notification">Push Notification?</string>
+    <!--<string name="razor_pay_merchant_key" translatable="false">rzp_live_4obPY1EW1FYGSK</string>-->
+    <!-- &lt;!&ndash; android:value="rzp_test_ANXLTWdQm5Jg5Q"-->
+    <string name="razor_pay_merchant_key" translatable="false">rzp_test_ANXLTWdQm5Jg5Q</string>
+    <string name="fabric_key">2d737c14d19337b16b67c2fb593d078f26e524d9</string>
+
+    <!--production-->
+    <string name="google_map_key">AIzaSyDcb6MQwGdpZgOpgxy3rodvqEslx0pyH1s</string>
+    <string name="login_open_text">Flash sale is running on this deal. Hurry up and Log In to grab this deal!!!</string>   <!--android:value="AIzaSyAYk4OCd2_9rZZlkedg3NgBnRtqkwLtBFI"-->
+
+    <!--Test release
+    <string name="google_map_key">AIzaSyAyscRCN8u3URPYQdjZdPfB8anK0x0QqMs</string>
+    -->
 </resources>

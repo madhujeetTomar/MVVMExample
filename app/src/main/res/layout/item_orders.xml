@@ -6,7 +6,7 @@
 
         <import type="android.text.TextUtils"/>
         <import type="android.view.View"/>
-        <variable name="model" type="com.mm.entedeal.module.ordermodule.model.OrderItemViewModel"/>
+        <variable name="model" type="com.mj.demo.module.ordermodule.model.OrderItemViewModel"/>
 
     </data>
 

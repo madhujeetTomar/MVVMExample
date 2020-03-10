@@ -3,4 +3,37 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+
+    <color name="frag_background">#dddddd</color>
+    <color name="violet">#684887</color>
+    <color name="white_light_grey">#f1f3f4</color>
+    <color name="light_grey">#ffcccccc</color>
+    <color name="bluish_green">#ff3aadb4</color>
+    <color name="ash">#ffdddddd</color>
+    <color name="color_White">#ffffffff</color>
+    <color name="bg_white">#ffffffff</color>
+    <color name="header_dim_white">#fff2f2f2</color>
+    <color name="zxing_transparent">#00000000</color>
+    <color name="black">#000000</color>
+    <color name="light_black">#696969</color>
+    <color name="avatar_bg">#dededf</color>
+    <color name="list_item_title">#fff</color>
+    <color name="list_divider">#9f9f9f</color>
+    <color name="colorGrayLight">#553973</color>
+    <color name="transparent">#00000000</color>
+    <color name="grey_color">#ff5d5d5d</color>
+    <color name="grey_dark">#ff7a787b</color>
+    <color name="grey_white">#b3ffffff</color>
+    <color name="counter_text_color">#ffc5c4c4</color>
+    <color name="red_dark">#ffcc0000</color>
+    <color name="pink">#ffe65493</color>
+    <color name="dark_grey">#ffe4e4e4</color>
+    <color name="order_confirm_bg_color">#fff6f6f6</color>
+    <color name="order_confirm_bg_shipping">#fff4f4f4</color>
+    <color name="bg_share">#ff000000</color>
+    <color name="bg_grey">#ffdcdcdc</color>
+    <color name="color_green_my_orders">#ff5bb83e</color>
+    <color name="bg_green">#ff38abb2</color>
+    <color name="light_blue">#fff3f3f3</color>
+    <color name="light_orange">#f38321</color>
 </resources>

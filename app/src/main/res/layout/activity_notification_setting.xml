@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.text.TextUtils"/>
+        <import type="android.view.View"/>
+        <variable name="model" type="com.mj.demo.module.notificationmodule.NotificationSettingViewModel"/>
+
+    </data>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:layout_height="match_parent"
+    android:background="#fff3f3f3"
+    >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8.4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/notifi_settings_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentLeft="true">
+
+                <TextView
+                    android:id="@+id/txt_notificationsettings_head"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/psuh_layout"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="12.0dip"
+                    android:text="Notification Settings"
+                    android:textColor="@color/violet"
+                    android:textSize="18.0sp" />
+
+                <LinearLayout
+                    android:id="@+id/psuh_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_notificationsettings_head"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginTop="5.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:layout_marginBottom="5.0dip"
+                    android:background="@color/color_White">
+
+                    <Switch
+                        android:id="@+id/rb_push_noti"
+                        android:layout_width="match_parent"
+                        android:layout_height="40.0dip"
+                        android:layout_marginRight="10.0dip"
+                        android:button="@null"
+                        android:checked="@{model.pushNotificationAlert}"
+                        android:paddingLeft="15.0dip"
+                        android:paddingTop="5.0dip"
+                        android:paddingRight="5.0dip"
+                        android:paddingBottom="5.0dip"
+                        android:text="Push Notification"
+                        android:textColor="@color/grey_dark"
+                        android:textSize="@dimen/text_medium" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/sms_alert_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/psuh_layout"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:layout_marginBottom="5.0dip"
+                    android:background="@color/color_White">
+
+                    <Switch
+                        android:id="@+id/rb_sms_alert"
+                        android:layout_width="match_parent"
+                        android:layout_height="40.0dip"
+                        android:layout_marginRight="10.0dip"
+                        android:button="@null"
+                        android:checked="@{model.smsNotification}"
+
+                        android:paddingLeft="15.0dip"
+                        android:paddingTop="5.0dip"
+                        android:paddingRight="5.0dip"
+                        android:paddingBottom="5.0dip"
+                        android:text="SMS Alert"
+                        android:textColor="@color/grey_dark"
+                        android:textSize="@dimen/text_medium" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/email_alert_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/sms_alert_layout"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:layout_marginBottom="5.0dip"
+                    android:background="@color/color_White">
+
+                    <Switch
+                        android:id="@+id/rb_email_alert"
+                        android:layout_width="match_parent"
+                        android:layout_height="40.0dip"
+                        android:layout_marginRight="10.0dip"
+                        android:button="@null"
+                        android:checked="@{model.emailNotification}"
+                        android:paddingLeft="15.0dip"
+                        android:paddingTop="5.0dip"
+                        android:paddingRight="5.0dip"
+                        android:paddingBottom="5.0dip"
+
+                        android:text="Email Alert"
+                        android:textColor="@color/grey_dark"
+                        android:textSize="@dimen/text_medium" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/linearlayoutselectall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/notifi_settings_layout"
+                android:layout_marginTop="10.0dip"
+                android:layout_marginBottom="10.0dip"
+                android:orientation="horizontal"
+                android:weightSum="2.0">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10.0dip"
+                    android:text="Select City for Notification "
+                    android:textColor="@color/violet"
+                    android:textSize="18.0sp" />
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/selectall_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5.0dip"
+                    android:buttonTint="@color/bluish_green" />
+
+                <TextView
+                    android:id="@+id/tvTag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/selectall_checkbox"
+                    android:layout_weight="1.0"
+                    android:maxEms="16"
+                    android:paddingLeft="5.0dip"
+                    android:paddingTop="5.0dip"
+                    android:paddingBottom="5.0dip"
+                    android:text="Select All"
+                    android:textAppearance="@android:style/TextAppearance.Small"
+                    android:textColor="@color/black"
+                    android:textSize="13.0sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearlayoutselectall"
+                android:background="@color/bg_white">
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recy_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+
+
+                    >
+
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/SaveButtonLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1.6"
+        >
+
+        <Button
+            android:id="@+id/Submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+
+
+            android:background="@drawable/rounded_button_city_selection"
+
+            android:layout_margin="10dp"
+
+            android:text="Submit"
+            android:textColor="@color/bg_white" />
+    </RelativeLayout>
+
+
+
+</LinearLayout>
+</layout>

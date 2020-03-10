@@ -9,7 +9,7 @@
 
         <variable
             name="orderViewModel"
-            type="com.mm.entedeal.module.ordermodule.OrderViewModel"/>
+            type="com.mj.demo.module.ordermodule.OrderViewModel"/>
     </data>
 
 
